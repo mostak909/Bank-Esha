@@ -18,21 +18,74 @@
             <br>
             <input type="password" class="form-control" placeholder="Enter Password">
             <br>
-            <button class="btn btn-success">Login</button>
+            <button id="login" class="btn btn-success">Login</button>
         </div>
-   </div>
-</section>
-<section>  
         <div class="container text-center">
-           <a href="#"><h5>Forgot Password/ ID locked?</h5></a>
+            <a href="#"><h5>Forgot Password/ ID locked?</h5></a>
             <h6>Security Tips</h6>
             <a href="#"><h5>Sign up for Internet Banking</h5></a>
+         </div>
+         <footer>
+             <p class="text-center">Designed <a href="">M2Tech-it</a> by Mostak Ahmed &copy COPYRIGHT 2018 Bank Esha Limited</p> 
+         </footer>
+     </div>
+   </div>
+</section>
+<!--Transaction Area-->
+<section>
+    <div>
+        <div id="transaction-area">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="depojit status">
+                        <h5>Depojit</h5>
+                        <h2>$000</h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="withdraw status">
+                        <h5>Withdraw</h5>
+                        <h2>$000</h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="balance status">
+                        <h5>Balance</h5>
+                        <h2>$000</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="submit-area">
+                        <h4>Depojit</h4> 
+                        <input type="text" class="form-control" placeholder="$ Amount you want to Depojit">  
+                        <br>
+                        <button class="btn btn-success">Depojit</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="submit-area">
+                        <h4>Withdraw</h4> 
+                        <input type="text" class="form-control" placeholder="$ Amount you want to Withdraw">
+                        <br>
+                        <button class="btn btn-success">Withdraw</button>
+                    </div>     
+                </div>
+            </div>
         </div>
-        <footer>
-            <p class="text-center">Designed <a href="">M2Tech-it</a> by Mostak Ahmed &copy COPYRIGHT 2018 Bank Esha Limited</p> 
-        </footer>
     </div>
 </section>
+ 
+<script>
+    const loginBtn = document.getElementById("login");
+    loginBtn.addEventListener("click",function(){
+        const loginArea = document.getElementById("login-area");
+        loginArea.style.display = "none";
+        const transactionArea = document.getElementById("transaction-area");
+        transactionArea.style.display = "block";
+    })
+</script>
     
 </body>
 </html>
