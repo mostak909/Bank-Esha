@@ -1,5 +1,7 @@
 body {
-    padding: 150px;
+    margin: 0px;
+    padding-top:100px ;
+    padding-bottom:50px ;
 }
 .submit-area {
     margin-top: 50px;
@@ -10,4 +12,8 @@ body {
 .container {
     margin-top: 50px;
     margin-bottom: 50px;
+}
+section {
+width: 500px;
+
 }
